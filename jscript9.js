@@ -9,22 +9,20 @@ let totalSum = document.getElementById("sum-el").textContent
 function addTogether() {
     let result = num1 + num2
     totalSum.textContent = "Sum: " + result
+    console.log(result)
 }
 
 function subtractFrom() {
     let result = num1 - num2
     totalSum.textContent = "Sum: " + result
-
 }
 
 function multipliedBy() {
     let result = num1 * num2
     totalSum.textContent = "Sum: " + result
-
 }
 
 function dividedBy() {
     let result = num1 / num2
     totalSum.textContent = "Sum: " + result
-
 }
