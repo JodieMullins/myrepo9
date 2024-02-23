@@ -40,3 +40,84 @@ def is_palindrome(phrase):
 print(is_palindrome("anna"))  # True
 
 print(is_palindrome("congratulations"))  # False
+
+
+""" 
+dmopc15c7p2
+
+Sample Input
+problem one is really long
+
+Sample Output
+5
+
+Take input. Count the number of words. Provide count of output to user.
+"""
+line = input()
+total_words = line.count(' ') + 1
+print(total_words)
+
+
+'''
+dmopc14c5p1
+
+The Challenge
+Calculate the volume of a right circular cone.
+
+Input
+The input consists of two lines of text. The first line contains integer r, the
+radius of the cone. The second line contains integer h, the height of the
+cone. Both r and h are between 1 and 100. (That is, the minimum value for r
+and h is 1, and the maximum value is 100.)
+
+Output
+Output the volume of the right circular cone with radius r and height h. The
+formula to calculate the volume is (πr2h)/3.
+
+'''
+PI = 3.141592653589793
+radius = int(input())
+height = int(input())
+volume = (PI * radius ** 2 * height) / 3
+print(volume)
+
+
+
+
+# EXERCISES:
+'''
+Sample Input
+problem one is really long
+
+Sample Output
+5
+
+Hint
+V is the volume of the right circular cone with radius r and height h .
+V = π r 2 h 3
+
+'''
+
+line = input()
+total_words = line.count(' ') + 1
+print(total_words)
+
+
+'''
+Sample Input
+5
+
+Sample Output
+spoooooky
+
+'''
+
+in_number = int(input())
+
+if in_number <= 2:
+    print("spooky")
+elif in_number >= 3:
+    count = in_number - 2
+    additional = count * "o"
+    print("spoo" + additional + "ky")
+
