@@ -121,3 +121,18 @@ elif in_number >= 3:
     additional = count * "o"
     print("spoo" + additional + "ky")
 
+
+'''
+Output a single integer, the temperature in degrees Fahrenheit 
+which is equivalent to C degrees Celsius.
+Sample Input
+20
+
+Sample Output
+68
+'''
+cTemp = int(input())
+conv = (cTemp*(9/5)) + 32
+print(conv)
+
+
