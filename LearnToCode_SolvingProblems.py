@@ -135,4 +135,31 @@ cTemp = int(input())
 conv = (cTemp*(9/5)) + 32
 print(conv)
 
+'''
+This is DMOJ problem ccc19j1.
+The output is a single character.
+• If the Apples scored more points than the Bananas, output A (A for
+Apples).
+• If the Bananas scored more points than the Apples, output B (B for
+Bananas).
+• If the Apples and Bananas scored the same number of points, output T (T for Tie).
+
+'''
+
+
+a3 = int(input())
+a2 = int(input())
+a1 = int(input())
+atotal = (a3*3) + (a2*2) + a1
+b3 = int(input())
+b2 = int(input())
+b1 = int(input())
+btotal = (b3*3) + (b2*2) + b1
+if atotal < btotal:
+    print("B")
+elif atotal > btotal:
+    print("A")
+else:
+    print("T")
+
 
