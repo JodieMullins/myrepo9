@@ -41,7 +41,6 @@ print(is_palindrome("anna"))  # True
 
 print(is_palindrome("congratulations"))  # False
 
-
 """ 
 dmopc15c7p2
 
@@ -56,7 +55,6 @@ Take input. Count the number of words. Provide count of output to user.
 line = input()
 total_words = line.count(' ') + 1
 print(total_words)
-
 
 '''
 dmopc14c5p1
@@ -81,9 +79,6 @@ height = int(input())
 volume = (PI * radius ** 2 * height) / 3
 print(volume)
 
-
-
-
 # EXERCISES:
 '''
 Sample Input
@@ -97,11 +92,9 @@ V is the volume of the right circular cone with radius r and height h .
 V = π r 2 h 3
 
 '''
-
 line = input()
 total_words = line.count(' ') + 1
 print(total_words)
-
 
 '''
 Sample Input
@@ -111,7 +104,6 @@ Sample Output
 spoooooky
 
 '''
-
 in_number = int(input())
 
 if in_number <= 2:
@@ -120,7 +112,6 @@ elif in_number >= 3:
     count = in_number - 2
     additional = count * "o"
     print("spoo" + additional + "ky")
-
 
 '''
 Output a single integer, the temperature in degrees Fahrenheit 
@@ -132,7 +123,7 @@ Sample Output
 68
 '''
 cTemp = int(input())
-conv = (cTemp*(9/5)) + 32
+conv = (cTemp * (9 / 5)) + 32
 print(conv)
 
 '''
@@ -145,16 +136,14 @@ Bananas).
 • If the Apples and Bananas scored the same number of points, output T (T for Tie).
 
 '''
-
-
 a3 = int(input())
 a2 = int(input())
 a1 = int(input())
-atotal = (a3*3) + (a2*2) + a1
+atotal = (a3 * 3) + (a2 * 2) + a1
 b3 = int(input())
 b2 = int(input())
 b1 = int(input())
-btotal = (b3*3) + (b2*2) + b1
+btotal = (b3 * 3) + (b2 * 2) + b1
 if atotal < btotal:
     print("B")
 elif atotal > btotal:
@@ -163,3 +152,28 @@ else:
     print("T")
 
 
+
+
+
+
+'''
+ccc18j1
+Sample Input 1
+9
+6
+6
+8
+
+Sample Output 1
+ignore
+
+Explanation for Sample Output 1
+
+The first digit is 9 , the last digit is 8 , 
+and the second and third digit are both 6 , so this is a telemarketer number.
+
+Matching index at 0 (>=8) AND 3 (>=8)
+
+1ST DIGIT = 8 OR 9
+4TH DIGIT = 8 OR 9
+'''
