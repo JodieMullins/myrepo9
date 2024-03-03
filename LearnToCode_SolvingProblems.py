@@ -151,11 +151,6 @@ elif atotal > btotal:
 else:
     print("T")
 
-
-
-
-
-
 '''
 ccc18j1
 Sample Input 1
@@ -177,3 +172,26 @@ Matching index at 0 (>=8) AND 3 (>=8)
 1ST DIGIT = 8 OR 9
 4TH DIGIT = 8 OR 9
 '''
+#telenum = []
+
+# first, second, third, fourth = int(input())
+# telenum = telenum.append(first).append(second).append(third).append(fourth)
+
+# # # # # #  # # # # #
+telenum = []
+
+first = int(input())
+second = int(input())
+third = int(input())
+fourth = int(input())
+# first, second, third, fourth = int(input())
+
+telenum.append(first)
+telenum.append(second)
+telenum.append(third)
+telenum.append(fourth)
+
+if (telenum[0] >= 8) and (telenum[3] >= 8) and (telenum[1] == telenum[2]):
+    print("ignore")
+else:
+    print("answer")
