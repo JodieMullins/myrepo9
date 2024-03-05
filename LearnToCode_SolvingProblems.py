@@ -172,7 +172,7 @@ Matching index at 0 (>=8) AND 3 (>=8)
 1ST DIGIT = 8 OR 9
 4TH DIGIT = 8 OR 9
 '''
-#telenum = []
+# telenum = []
 
 # first, second, third, fourth = int(input())
 # telenum = telenum.append(first).append(second).append(third).append(fourth)
@@ -195,3 +195,92 @@ if (telenum[0] >= 8) and (telenum[3] >= 8) and (telenum[1] == telenum[2]):
     print("ignore")
 else:
     print("answer")
+
+'''
+
+Here are the three burger choices:
+1 – Cheeseburger (461 Calories)
+2 – Fish Burger (431 Calories)
+3 – Veggie Burger (420 Calories)
+4 – no burger 	
+burger = [461, 431, 420, 0]
+
+Here are the three drink choices:
+1 – Soft Drink (130 Calories)
+2 – Orange Juice (160 Calories)
+3 – Milk (118 Calories)
+4 – no drink
+drink = [130, 160, 118, 0]
+
+Here are the three side order choices:
+1 – Fries (100 Calories)
+2 – Baked Potato (57 Calories)
+3 – Chef Salad (70 Calories)
+4 – no side order 	
+side = [100, 57, 70, 0]
+
+Here are the three dessert choices:
+1 – Apple Pie (167 Calories)
+2 – Sundae (266 Calories)
+3 – Fruit Cup (75 Calories)
+4 – no dessert
+dessert = [167, 266, 75, 0]
+
+Sample Input
+2
+1
+3
+4
+
+Sample Output
+Your total Calorie count is 649.
+
+'''
+burger = [461, 431, 420, 0]
+drink = [130, 160, 118, 0]
+side = [100, 57, 70, 0]
+dessert = [167, 266, 75, 0]
+
+first = int(input())
+thirst = int(input())
+third = int(input())
+final = int(input())
+
+#   maincal = burger.index(first+1)
+#   liqcal = drink.index(thirst+1)
+#   sidecal = side.index(third+1)
+#   desscal = dessert.index(final+1)
+
+#   totalCalories = int(maincal + liqcal + sidecal + desscal)
+
+print("Your total Calorie count is ", totalCalories)
+
+
+
+
+'''
+Write a program that asks the user for a numerical month and numerical day of the month and then determines whether that date occurs before, after, or on February 18.
+
+    If the date occurs before February 18, output the word Before.
+    If the date occurs after February 18, output the word After.
+    If the date is February 18, output the word Special.
+
+'''
+
+month = int(input())
+day = int(input())
+
+if month == 1:
+    print("Before")
+
+elif (month == 2) and (day < 18):
+    print("Before")
+
+elif (month == 2) and (day == 18):
+    print("Special")
+
+elif (month == 2) and (day >= 19):
+    print("After")
+
+else:
+    print("After")
