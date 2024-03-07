@@ -256,6 +256,55 @@ final = int(input())
 print("Your total Calorie count is ", totalCalories)
 
 
+text = input()
+
+if int(line.count(':-(')) > int(line.count(':-)')):
+    print('sad')
+
+elif int(line.count(':-(')) < int(line.count(':-)')):
+    print('happy')
+
+elif int(line.count(':-(')) == int(line.count(':-)')):
+    print('unsure')
+
+else:
+    print('none')
+
+#elif (count(':-(') == 0) and (count(':-)') == 0) in text:
+#    print('none')
+
+text = input()
+
+if ':-(' > ':-)' in text:
+    print('sad')
+
+elif ':-(' < ':-)' in text:
+    print('happy')
+
+elif ':-(' == ':-)' in text.readlines:
+    print('unsure')
+
+elif ':-(' == 0 and ':-)' == 0 in text:
+    print('none')
+
+
+-------------
+
+text = input()
+
+if count(':-(') > count(':-)'):
+    print('sad')
+
+elif count(':-(') < count(':-)'):
+    print('happy')
+
+elif count(':-(') == count(':-)'):
+    print('unsure')
+
+elif count(':-(') == count(':-)') and count(':-)') == 0:
+    print('none')
+
+
 
 
 '''
@@ -284,3 +333,32 @@ elif (month == 2) and (day >= 19):
 
 else:
     print("After")
+
+
+
+'''
+In the story Goldilocks and the Three Bears, each bear had a bowl of porridge to eat while sitting at his/her favourite chair. 
+What the story didn't tell us is that Goldilocks moved the bowls around on the table, so the bowls were not at the right seats anymore. 
+
+The bowls can be sorted by weight with the lightest bowl being the Baby Bear's bowl, 
+the medium bowl being the Mama Bear's bowl and the heaviest bowl being the Papa Bear's bowl.
+
+Write a program that reads in three weights and prints out the weight of Mama Bear's bowl. 
+You may assume all weights are positive integers less than 100 .
+
+'''
+
+bowls = []
+
+b1 = int(input())
+b1 = bowls.append(b1)
+
+b2 = int(input())
+b2 = bowls.append(b2)
+
+b3 = int(input())
+b3 = bowls.append(b3)
+
+for b in bowls:
+    if (b > min(bowls)) and (b < max(bowls)):
+        print(b)
