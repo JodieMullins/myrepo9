@@ -196,6 +196,104 @@ if (telenum[0] >= 8) and (telenum[3] >= 8) and (telenum[1] == telenum[2]):
 else:
     print("answer")
 
+    '''
+    In the story Goldilocks and the Three Bears, each bear had a bowl of porridge to eat while sitting at his/her favourite chair. 
+    What the story didn't tell us is that Goldilocks moved the bowls around on the table, so the bowls were not at the right seats anymore. 
+
+    The bowls can be sorted by weight with the lightest bowl being the Baby Bear's bowl, 
+    the medium bowl being the Mama Bear's bowl and the heaviest bowl being the Papa Bear's bowl.
+
+    Write a program that reads in three weights and prints out the weight of Mama Bear's bowl. 
+    You may assume all weights are positive integers less than 100 .
+
+    '''
+
+    bowls = []
+
+    b1 = int(input())
+    b1 = bowls.append(b1)
+
+    b2 = int(input())
+    b2 = bowls.append(b2)
+
+    b3 = int(input())
+    b3 = bowls.append(b3)
+
+    for b in bowls:
+        if (b > min(bowls)) and (b < max(bowls)):
+            print(b)
+
+
+'''
+Write a program that asks the user for a numerical month and numerical day of the month and then determines whether that date occurs before, after, or on February 18.
+
+    If the date occurs before February 18, output the word Before.
+    If the date occurs after February 18, output the word After.
+    If the date is February 18, output the word Special.
+
+'''
+
+month = int(input())
+day = int(input())
+
+if month == 1:
+    print("Before")
+
+elif (month == 2) and (day < 18):
+    print("Before")
+
+elif (month == 2) and (day == 18):
+    print("Special")
+
+elif (month == 2) and (day >= 19):
+    print("After")
+
+else:
+    print("After")
+
+
+
+'''
+dmopc16c1p0
+
+
+    C.C. will be absolutely satisfied if the pizza she gets has a width of 3 units and an extra-cheesiness of at least 95 % .
+    C.C. will be fairly satisfied if the pizza she gets has a width of 1 unit and an extra-cheesiness of at most 50 % .
+    C.C. will be very satisfied with any other pizza she receives.
+
+ in the form: C.C. is M satisfied with her pizza.
+'''
+
+
+msg = ""
+units = int(input())
+ch_percent = int(input())
+
+
+if units == 3 and ch_percent >= 95:
+    msg = "absolutely"
+    print("C.C. is ",msg," satisfied with her pizza.")
+elif units == 1 and ch_percent <= 50:
+    msg = "fairly"
+    print("C.C. is ",msg," satisfied with her pizza.")
+else:
+    msg = "very"
+    print("C.C. is ",msg," satisfied with her pizza.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 
 Here are the three burger choices:
@@ -307,58 +405,5 @@ elif count(':-(') == count(':-)') and count(':-)') == 0:
 
 
 
-'''
-Write a program that asks the user for a numerical month and numerical day of the month and then determines whether that date occurs before, after, or on February 18.
-
-    If the date occurs before February 18, output the word Before.
-    If the date occurs after February 18, output the word After.
-    If the date is February 18, output the word Special.
-
-'''
-
-month = int(input())
-day = int(input())
-
-if month == 1:
-    print("Before")
-
-elif (month == 2) and (day < 18):
-    print("Before")
-
-elif (month == 2) and (day == 18):
-    print("Special")
-
-elif (month == 2) and (day >= 19):
-    print("After")
-
-else:
-    print("After")
 
 
-
-'''
-In the story Goldilocks and the Three Bears, each bear had a bowl of porridge to eat while sitting at his/her favourite chair. 
-What the story didn't tell us is that Goldilocks moved the bowls around on the table, so the bowls were not at the right seats anymore. 
-
-The bowls can be sorted by weight with the lightest bowl being the Baby Bear's bowl, 
-the medium bowl being the Mama Bear's bowl and the heaviest bowl being the Papa Bear's bowl.
-
-Write a program that reads in three weights and prints out the weight of Mama Bear's bowl. 
-You may assume all weights are positive integers less than 100 .
-
-'''
-
-bowls = []
-
-b1 = int(input())
-b1 = bowls.append(b1)
-
-b2 = int(input())
-b2 = bowls.append(b2)
-
-b3 = int(input())
-b3 = bowls.append(b3)
-
-for b in bowls:
-    if (b > min(bowls)) and (b < max(bowls)):
-        print(b)
